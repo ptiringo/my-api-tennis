@@ -1,6 +1,9 @@
 {
   "name": "Node.js",
-  "dockerComposeFile": "../compose.yaml",
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "compose.devcontainer.yaml"
+  ],
   "service": "api",
   "workspaceFolder": "/workspace",
   "portsAttributes": {

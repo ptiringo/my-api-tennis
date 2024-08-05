@@ -1,11 +1,10 @@
 services:
   api:
-    image: node:20-bookworm
-    command: sleep infinity
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - 3000:3000
-    volumes:
-      - .:/workspace:cached
     depends_on:
       db:
         condition: service_healthy
