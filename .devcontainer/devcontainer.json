@@ -12,5 +12,12 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
 }

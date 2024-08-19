@@ -2,3 +2,5 @@ services:
   api:
     build:
       target: development
+    volumes:
+      - .:/workspace:cached

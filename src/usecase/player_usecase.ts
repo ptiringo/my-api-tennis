@@ -1,4 +1,9 @@
 import { Player, PlayerId } from "../domain/player/player";
+import { getPlayerById } from "../infrastructure/player_dao";
+
+export async function getPlayer(id: PlayerId): Promise<Player | null> {
+    return await getPlayerById(id);
+}
 
 /**
  * Registers a player.
