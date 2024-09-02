@@ -18,3 +18,7 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    groups:
+      prisma:
+        patterns:
+          - "prisma*"
