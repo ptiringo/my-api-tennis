@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import express from "express";
 import { helloRouter } from "./router/hello";
-import { playerRouter } from "./router/player_router";
+import { playerRouter } from "./router/player/playerRouter";
 
 const app: Express = express();
 const port = 3000;

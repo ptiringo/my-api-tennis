@@ -17,7 +17,9 @@
     "vscode": {
       "extensions": [
         "EditorConfig.EditorConfig",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "cweijan.vscode-database-client2"
       ]
     }
   }

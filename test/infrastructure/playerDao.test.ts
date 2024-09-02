@@ -1,7 +1,7 @@
 import { beforeAll, test } from '@jest/globals';
 import { exec } from 'child_process';
 import util from 'util';
-import { getPlayerById } from '../../src/infrastructure/player_dao';
+import { getPlayerById } from '../../src/infrastructure/playerDao';
 
 beforeAll(async () => {
   const execute = util.promisify(exec)
@@ -11,6 +11,6 @@ beforeAll(async () => {
 
 test("getPlayerById", async () => {
   console.log(process.env.DATABASE_URL)
-  const player = await getPlayerById("1");
+  const player = await getPlayerById("nishikori");
   console.log(player);
 });
