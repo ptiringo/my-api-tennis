@@ -22,3 +22,12 @@ updates:
       prisma:
         patterns:
           - "prisma*"
+      jest:
+        patterns:
+          - "jest"
+          - "@jest*"
+          - "ts-jest"
+      express:
+        patterns:
+          - "express*"
+          - "@types/express"
