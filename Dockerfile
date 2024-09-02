@@ -3,7 +3,7 @@
 ################################################################################
 # development
 ################################################################################
-FROM node:20-bookworm AS development
+FROM node:21-bookworm AS development
 
 ARG USERNAME=user-name-goes-here
 ARG USER_UID=1000
@@ -20,7 +20,7 @@ ENTRYPOINT [ "sleep", "infinity" ]
 ################################################################################
 # build
 ################################################################################
-FROM node:20-bookworm AS build
+FROM node:21-bookworm AS build
 WORKDIR /src
 
 RUN --mount=type=bind,source=package.json,target=package.json \
@@ -33,7 +33,7 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 ################################################################################
 # runner
 ################################################################################
-FROM node:20-bookworm as runner
+FROM node:21-bookworm as runner
 
 ENV NODE_ENV=production
 
